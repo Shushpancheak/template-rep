@@ -1,2 +1,0 @@
-F:/!Edu/Algorithms and Data Structures/template/out/build/x64-Debug/CMakeFiles/edit_cache.dir
-F:/!Edu/Algorithms and Data Structures/template/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
