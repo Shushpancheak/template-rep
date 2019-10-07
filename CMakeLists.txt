@@ -3,8 +3,6 @@ cmake_minimum_required(VERSION 3.11)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories(include src)
-
 project (
   "PROJECT_NAME"
   VERSION 1.0.0
@@ -12,11 +10,11 @@ project (
 )
 set (
   SOURCES
-  src/$$$.cpp
+  src/${PROJECT_NAME}.cpp
 )
 set (
   PUBLIC_HEADERS
-  include/$$$.hpp
+  include/${PROJECT_NAME}.hpp
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -82,4 +80,11 @@ add_executable(${UNIT_TESTS_NAME} ${UNIT_TESTS_FILE})
 target_link_libraries(${UNIT_TESTS_NAME} gtest_main ${LIBRARY_NAME})
 add_test(${UNIT_TESTS_NAME} ${UNIT_TESTS_NAME})
 
+# For next libraries.
+set(BUILD_TESTS OFF CACHE BOOL "Build tests" FORCE)
+
 endif() # BUILD_TESTS
+
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - DEPENDENCIES- - - - - - - - - - - - - - - - - - - - -
+# - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

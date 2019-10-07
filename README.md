@@ -4,7 +4,7 @@ PROJECT_DESCRIPTION
 ## Build
 ```shell
 mkdir build && cd build
-cmake .. # -DBUILD_TESTS=ON to build tests, -DLIBRARY_TYPE=SHARED for building shared library
+cmake .. # "-UBUILD_TESTS -DBUILD_TESTS=ON" to build tests, "-ULIBRARY_TYPE -DLIBRARY_TYPE=SHARED" for building shared library
 make
 ```
 
