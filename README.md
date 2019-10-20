@@ -1,5 +1,5 @@
-# PROJECT_NAME
-PROJECT_DESCRIPTION
+# @PROJECT_NAME@
+@PROJECT_DESCRIPTION@
 
 ## Build
 ```shell
@@ -12,16 +12,16 @@ make
 Download the repository and place it into your project directory. In your project's CMakeLists.txt file, insert the following lines:
 ```cmake
 ...
-add_subdirectory(shush-format)
+add_subdirectory(@PROJECT_NAME@)
 ...
-target_link_libraries(${PROJECT_NAME} shush-format)
+target_link_libraries(${PROJECT_NAME} @PROJECT_NAME@)
 ...
 ```
 
 ## How to use THE EXECUTABLE
 ```shell
 cd build
-./PROJECT_NAME
+./@PROJECT_NAME@
 ```
 
 ## Build documentation
